@@ -49,22 +49,22 @@ describe('CalculateDueDate', function () {
     });
 
     it('should work with 8 hours', function () {
-      var result = calculateDueDate(monday, 8);
+      var result = calculateDueDate(friday, 8);
       var nextMonday = new Date(2016, 2, 21, 13, 45);
       expect(result).toEqual(nextMonday);
     });
     it('should work with 40 hours', function () {
-      var result = calculateDueDate(monday, 40);
+      var result = calculateDueDate(friday, 40);
       var nextFriday = new Date(2016, 2, 25, 13, 45);
       expect(result).toEqual(nextFriday);
     });
     it('should work with 41 hours', function () {
-      var result = calculateDueDate(monday, 41);
+      var result = calculateDueDate(friday, 41);
       var nextFridaySometime = new Date(2016, 2, 25, 14, 45);
       expect(result).toEqual(nextFridaySometime);
     });
     it('should work with 80 hours', function () {
-      var result = calculateDueDate(monday, 80);
+      var result = calculateDueDate(friday, 80);
       var aprilFirst = new Date(2016, 3, 1, 13, 45);
       expect(result).toEqual(aprilFirst);
     });
