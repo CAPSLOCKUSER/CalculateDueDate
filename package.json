@@ -1,0 +1,14 @@
+{
+  "name": "calculate-due-date",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Miklos Megyes <m.miklos05@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-cli": "^0.9.2"
+  }
+}
