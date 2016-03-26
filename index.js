@@ -23,12 +23,12 @@ function isWorkHappening(date) {
 }
 
 function calculateDueDate(submitDate, turnaroundTime) {
-  var cost = turnaroundTime;
+  var workLeft = turnaroundTime;
   var now = new Date(submitDate);
-  while (cost > 0) {
+  while (workLeft > 0) {
     now = nextHour(now);
     if (isWorkHappening(now)) {
-      cost--;
+      workLeft--;
     }
   }
   return now;
